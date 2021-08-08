@@ -15,7 +15,7 @@ SLACK_URL: 'https://hooks.slack.com/services/hoge' # Webhook URL
 あとは普通に `atcoder-clar-to-slack.py` を実行したら動きます．
 
 ## スクリーンショット
-![./screenshot.png](スクリーンショット)
+![スクリーンショット](./screenshot.png)
 
 ## 動作確認
 2021/08/08 版の AtCoder で正常な動作を確認しています．
