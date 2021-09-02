@@ -1,6 +1,11 @@
 # atcoder-clar-to-slack
 AtCoder の質問タブの更新情報を Slack に通知します．Owner 権限を有していることを前提としています．
 
+## 動作環境
+```
+pip install bs4
+```
+
 ## 使い方
 次の例を参考に `config.yml` を設置してください．
 
