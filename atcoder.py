@@ -54,6 +54,7 @@ class Atcoder:
             clar.update_time = tds[6].get_text().strip()
             clar.clar_url = tds[7].find("a")["href"]
             clars.insert(0, clar)
+        clars.sort()
         return clars
 
 class Clar:
@@ -69,7 +70,10 @@ class Clar:
     clar_url = ""
 
     def __eq__(self, other):
-        return self.update_time == other.update_time
+        return self.clar_url == other.clar_url
+
+    def __lt__(self, other):
+        return self.clar_url < other.clar_url
 
     def convert_json(self, updated):
         if not updated:
