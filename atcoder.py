@@ -36,6 +36,8 @@ class Atcoder:
         response = self.session.get(clar_url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
+        if soup.find("tbody") == None:
+            return []
         trs = soup.find("tbody").find_all("tr")
         clars = []
         for tr in trs:
