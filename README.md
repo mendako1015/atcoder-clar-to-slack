@@ -17,7 +17,11 @@ INTERVAL: 10 # 単位：秒
 SLACK_URL: 'https://hooks.slack.com/services/hoge' # Webhook URL
 ```
 
-あとは普通に `atcoder-clar-to-slack.py` を実行したら動きます．
+コマンドライン引数として `config.yml` のパスを渡してください．
+
+```bash
+$ python atcoder-clar-to-slack.py config.yml
+```
 
 ## スクリーンショット
 ![スクリーンショット](./screenshot.png)
